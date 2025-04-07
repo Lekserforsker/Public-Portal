@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F6F8FC;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Tajawal', sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+button.shadow-md {
+  background-color: #5E88C3;
+  color: #FFFFFF;
+}
+
+div.flex.order-2.mb-4 {
+  justify-content: flex-end;
+}
+
+div.rounded-lg.bg-transparent {
+  background-color: transparent;
+  border: 0cm;
+}
+
+
+p.text-lg.font-tajawal {
+  color: var(--Neutral---Black-Neutral---Black500, #1A1A1A);
+  font-family: 'Tajawal', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; 
+  max-width: 300px;
+}
+
+button.more {
+  color: var(--Secondary-Secondary600, #5E88C3);
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  display: flex;
+  width: 187px;
+  height: 53px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 27px;
+  border: 1px solid var(--Secondary-Secondary600, #5E88C3);
+  background-color: transparent;
+}
+
+button.more:hover {
+  background-color: #5E88C3;
+  color: white; 
+}
+
+div.flex.overflow-x-scroll.space-x-4.scrollbar-hide {
+  padding: 0px 32px;
+}
+
+div.flex.overflow-x-scroll {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+div.flex.overflow-x-scroll::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+div.flex.justify-start.mt-6 {
+  padding: 46px 40px;
+}

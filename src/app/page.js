@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import "../style.css"
+import Carousel from "@/components/ui/carousel-section";
+import "../style.css";
+
 export default function Home() {
   return (
     <main>
@@ -48,6 +50,7 @@ export default function Home() {
 
     </div>
 </div>
+      <Carousel />
     </main>
   );
 }
