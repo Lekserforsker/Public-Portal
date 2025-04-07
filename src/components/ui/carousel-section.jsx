@@ -108,7 +108,7 @@ export default function Carousel() {
         <Button onClick={scrollLeft} variant="outline" className="mr-2 shadow-md">
           ❮
         </Button>
-        <Button onClick={scrollRight} variant="outline" className="shadow-md">
+        <Button onClick={scrollRight} variant="outline" className="mr-2 shadow-md">
           ❯
         </Button>
       </div>
